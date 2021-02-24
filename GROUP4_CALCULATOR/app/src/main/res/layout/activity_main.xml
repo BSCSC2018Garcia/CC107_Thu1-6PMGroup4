@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/calculator"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+   <EditText
+       android:id="@+id/no1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/title"
+       android:layout_marginTop="60dp"
+       android:hint="@string/numbers"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       android:textSize="25sp" />
+   <EditText
+       android:id="@+id/no2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/no1"
+       android:layout_marginTop="60dp"
+       android:hint="@string/numbers"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="50dp"
+        android:background="#00BCD4"
+        android:text="@string/addition"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/subButton"
+        android:text="@string/sub"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no2"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/subButton"
+        android:background="#00BCD4"
+        android:text="@string/multiply"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/multiplyButton"
+        android:background="#00BCD4"
+        android:text="@string/divide"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/result"
+        android:textSize="25sp"
+        android:layout_below="@+id/addButton"
+         android:inputType="none"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
