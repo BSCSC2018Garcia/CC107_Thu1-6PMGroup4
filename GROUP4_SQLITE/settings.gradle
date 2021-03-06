@@ -1,0 +1,2 @@
+rootProject.name='Group4_SQlite'
+include ':app'
