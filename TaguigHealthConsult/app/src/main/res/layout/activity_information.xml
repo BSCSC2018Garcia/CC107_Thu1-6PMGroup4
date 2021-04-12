@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infobg"
+    android:padding="16dp"
+    tools:context=".InformationActivity">
+
+    <ImageView
+        android:id="@+id/hello"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/thclogo" />
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_marginTop="16dp"
+        android:text="Taguig Health Consult is a scheduling and reservation app used in different health centers and public hospitals in Taguig City. "
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info1"
+        android:layout_marginTop="35dp"
+        android:text="This application will include setting appointment and request ambulance assistance for medical consultations and checkups. And will provide Electronic pass and schedule acceptance from the chosen health care unit. "
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info2"
+        android:layout_marginTop="35dp"
+        android:text="This will help for easier transaction and to avoid crowding and queue of patients at the health establishments."
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#F44336"
+        android:text="Back to Home"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

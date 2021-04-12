@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="#D0312D">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="REGISTER"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="377dp"
+            android:layout_height="120dp"
+
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/registerpersonalinfo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_1"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL INFORMATION"
+        android:textAlignment="center"
+        android:textColor="#D0312D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/firstname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/middlename_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Middle Name (Optional)"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/lastname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middlename_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/suffixname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Suffix (Optional)"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/birth_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suffixname_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Birth date (MM-DD-YEAR)"
+        android:inputType="date"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/sex_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birth_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Sex"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/mobilenumber_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sex_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Mobile Number"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/emailaddress_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobilenumber_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email Address"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/contactperson_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailaddress_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Contact Person"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/contactpersonmobilenumber_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactperson_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Contact Person Mobile Number"
+        android:inputType="number"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactpersonmobilenumber_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="LOCATION"
+        android:textAlignment="center"
+        android:textColor="#D0312D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/houseblockno_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:hint="House/ Block No"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/street_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/houseblockno_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Street"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/barangay_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/street_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Barangay"
+        android:inputType="text"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/region_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barangay_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Region"
+        android:inputType="text"
+        android:text="NCR"
+        android:editable="false"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        tools:ignore="Deprecated" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/city_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/region_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="City"
+        android:inputType="text"
+        android:text="TAGUIG CITY"
+        android:editable="false"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        tools:ignore="Deprecated" />
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="PASSWORD"
+        android:textAlignment="center"
+        android:textColor="#D0312D"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/passwordconfirm_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/passwordconfirm_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#D0312D"
+        android:text="Finish"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+       />
+    <Button
+        android:id="@+id/btn_newback"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#D0312D"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:layout_marginBottom="50dp"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

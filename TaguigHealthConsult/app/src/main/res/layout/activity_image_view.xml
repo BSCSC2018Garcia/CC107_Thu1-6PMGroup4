@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0312D"
+    tools:context=".ImageViewActivity">
+
+    <ImageView
+        android:id="@+id/title1"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:src="@drawable/clinic"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/we_care_for_your_health"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_centerHorizontal="true"
+        android:text="Book appointment now"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

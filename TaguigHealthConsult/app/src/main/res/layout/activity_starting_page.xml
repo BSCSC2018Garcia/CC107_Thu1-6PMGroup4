@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0312D"
+    tools:context=".StartingPageActivity">
+
+    <ImageView
+        android:id="@+id/title1"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/taguighealthconsult" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#ffff"
+
+        android:text="Login"
+        android:textColor="#D0312D" />
+
+    <TextView
+        android:id="@+id/viewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Do you have an account?"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewRegistration"
+        android:layout_centerHorizontal="true"
+        android:background="#D0312D"
+        android:clickable="true"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:textColorHighlight="#ffff"
+        android:textColorLink="#FBF2F2"
+        android:textSize="15sp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

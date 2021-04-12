@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">THC Consult</string>
+    <string name="taguig_health_consult">TAGUIG HEALTH CONSULT</string>
+    <string name="title1">Take Care of Your Health</string>
+    <string name="title2">Consult Your Doctor</string>
+    <string name="title3">We Heal as One</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="this_is_our_app_so_please_enjoy_using_our_app">This is our app, so please enjoy using our app</string>
+    <string name="taguig_city_a_safe_city">TAGUIG CITY A SAFE CITY</string>
+    <string name="we_care_for_your_health">We care for your health</string>
+    <string name="forget_your_password">Forget Your password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="back_to_dashboard">Back to dashboard</string>
+    <string name="start_appointing_your_consultation">START APPOINTING YOUR CONSULTATION</string>
+    <string name="who_is_the_patient">Who is the patient?</string>
+    <string name="select_date">Select Date</string>
+    <string name="continue1">CONTINUE</string>
+    <string name="todo">TODO</string>
+    <string name="enter_full_name">Enter Full Name:</string>
+    <string name="enter_your_address">Enter Your Complete Address</string>
+    <string name="select_time">Select Time</string>
+    <string name="age">Age</string>
+    <string name="thc">THC Consult</string>
+
+    <string-array name="hospitals">
+        <item>Bagumbayan Health Center</item>
+        <item>Bambang Health Center</item>
+        <item>Calzada Health Center</item>
+        <item>Central Bicutan Health</item>
+        <item>Central Signal Health</item>
+        <item>Bonifacio Health Center</item>
+        <item>Hagonoy Health Center</item>
+        <item>Ibayo-Tipas Health Center</item>
+        <item>Katuparan Health Center</item>
+        <item>Ligid-Tipas Super Health Center</item>
+        <item>Lower Bicutan Health Center</item>
+        <item>Maharlika Village Health Center</item>
+        <item>Napindan Health Center</item>
+        <item>New Lower Bicutan Health Centerh</item>
+        <item>North Daang Hari Health Center</item>
+        <item>Palingon-Tipas Health Center</item>
+        <item>Pinagsama Health Center</item>
+        <item>San Miguel Health Center</item>
+        <item>Sta Ana Health Center</item>
+        <item>Sitio Imelda Health Center</item>
+        <item>South Daang Hari Health Center</item>
+        <item>South Signal Health Center</item>
+        <item>Tanyag Health Center</item>
+        <item>Tuktukan Health Center</item>
+        <item>Upper Bicutan Health</item>
+        <item>Ususan Health Center</item>
+        <item>Wawa Health Center</item>
+        <item>Western Bicutan Health Center</item>
+        <item>Palar Health Center</item>
+        <item>DPWH Central Bicutan</item>
+        <item>Osano Central Bicutan Health Center</item>
+        <item>North Signal Super Health Center</item>
+        <item>Napindan Super Health Center</item>
+        <item>Central Bicutan Super Health Center</item>
+        <item>Taguig City Health Office</item>
+        <item>Taguig-Pateros Hospital</item>
+    </string-array>
+
+    <string-array name="yesorno">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="sex">
+        <item>Select Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+<string-array name="gender">
+    <item>Select Gender</item>
+    <item>Female</item>
+    <item>Male</item>
+    <item>Prefer not to say</item>
+</string-array>
+
+</resources>

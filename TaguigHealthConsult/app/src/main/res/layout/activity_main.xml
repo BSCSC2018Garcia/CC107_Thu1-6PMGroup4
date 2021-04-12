@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0312D"
+    tools:context=".MainActivity">
+  <ImageView
+      android:id="@+id/title1"
+      android:layout_width="230dp"
+      android:layout_height="240dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="120dp"
+      android:src="@drawable/stethoscope"
+
+      />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="30dp"
+        android:text="@string/taguig_city_a_safe_city"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality Care, Reliable Service"
+        android:textStyle="italic"
+        android:textSize="19sp"
+        android:layout_below="@id/title2"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

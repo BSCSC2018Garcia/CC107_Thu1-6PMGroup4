@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0312D"
+    tools:context=".AppointmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D0312D">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="#D0312D"
+            android:text="@string/back_to_dashboard"
+            android:textColor="#ffff" />
+
+        <RelativeLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_back"
+            android:layout_marginTop="2dp"
+            android:background="#ffff">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/start_appointing_your_consultation"
+                android:textAlignment="center"
+                android:textColor="#D0312D"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/who_is_the_patient"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/myselfprofile" />
+
+        <EditText
+            android:id="@+id/patientname_edit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginStart="30dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/enter_full_name"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/age_edit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patientname_edit"
+            android:layout_marginLeft="30dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/age"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/gender_edit"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patientname_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/age_edit"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Gender:  M/F"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/mobileno_edit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_edit"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Enter Mobile No"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/address_edit"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/mobileno_edit"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/enter_your_address" />
+
+        <EditText
+            android:id="@+id/medical_edit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_edit"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Medical Concern" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medical_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Select Time and Date"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/time_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/select_time" />
+
+        <EditText
+            android:id="@+id/date_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/time_edit"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/select_date"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_edit"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Do you want to request an ambulance?"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+
+         <RadioGroup
+             android:id="@+id/radioGroup"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="15dp"
+             android:layout_centerHorizontal="true"
+             android:orientation="horizontal"
+             android:layout_below="@id/emergency">
+        <RadioButton
+            android:id="@+id/no_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#ffff"
+            android:checked="true"
+            />
+             <RadioButton
+                 android:id="@+id/yes_radio"
+                 android:layout_width="wrap_content"
+                 android:layout_marginLeft="50dp"
+                 android:layout_height="wrap_content"
+                 android:text="Yes"
+                 android:textColor="#ffff"
+                 />
+
+         </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/hospitals_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Select HospitaL Center Branch"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/hospitals"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitals_view"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitals"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qrcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:text="Proceed" />
+
+        <Button
+            android:id="@+id/download_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"
+            android:text="Cancel"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D0312D">
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/hello"
+        android:src="@drawable/imagesliderone"
+        app:sliderAnimationDuration="1000"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="1000"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true"
+    />
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="175dp"
+        android:layout_height="185dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/imageSlider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:background="#ffff"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment"
+            android:textColor="#D0312D"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:id="@+id/appointment_btn"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/appointment"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="180dp"
+        android:layout_height="185dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/imageSlider"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/layout_1"
+        android:background="#ffff"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:textColor="#D0312D"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:id="@+id/information_btn"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:src="@drawable/information"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

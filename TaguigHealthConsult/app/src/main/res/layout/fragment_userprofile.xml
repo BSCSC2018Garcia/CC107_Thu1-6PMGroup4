@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0312D">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D0312D">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffff">
+
+            <ImageView
+                android:id="@+id/ima"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/thclogo" />
+
+            <TextView
+                android:id="@+id/name_TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ima"
+                android:layout_centerHorizontal="true"
+                android:text="TAGUIG HEALTH CONSULT"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/email_Textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_TextView1"
+                android:layout_centerHorizontal="true"
+                android:text="You can also email or contact the developers"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/birthday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Developers"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/birthday_textview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/shie" />
+
+        <TextView
+            android:id="@+id/shiename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthday_textview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="Shiela Mae O. Garcia"
+            android:textSize="16dp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/shieemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthday_textview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="shielamae.garcia13@gmail.com"
+            android:textColor="#ffff" />
+        <ImageView
+            android:id="@+id/arianne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/shie"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arianne" />
+
+        <TextView
+            android:id="@+id/ariannename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shie"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="Arianne A, Sumayop"
+            android:textSize="16dp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/arianneemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ariannename"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="ayacutesumayop@gmail.com"
+            android:textColor="#ffff" />
+        <ImageView
+            android:id="@+id/jaimie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/arianne"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/jaimie" />
+
+        <TextView
+            android:id="@+id/jaimiename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arianne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/arianne"
+            android:text="Jaimie P Fernando"
+            android:textSize="16dp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/jaimieemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jaimiename"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="reodpariz20@gmail.com"
+            android:textColor="#ffff" />
+        <ImageView
+            android:id="@+id/vero"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/jaimie"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/vero"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/veroname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jaimie"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/jaimie"
+            android:text="Maria Veronica L. Ramirez"
+            android:textSize="16dp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/veroemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/veroname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/shie"
+            android:text="mariaveronicalramirez@gmail.com"
+            android:textSize="12dp"
+            android:textColor="#ffff" />
+    </RelativeLayout>
+
+</ScrollView>
